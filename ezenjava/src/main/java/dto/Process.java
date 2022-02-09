@@ -31,6 +31,7 @@ public class Process {
 		this.processEndTime = processEndTime;
 	}
 
+	// 작업 지시 번호를 직접 입력하는 경우
 	public Process(int processOrder, String processPreparation1, String processPreparation2, String processPreparation3,
 			String processPreparation4, String processPreparation5, String processPreparation6, String processEndDate,
 			String processEndTime) {
@@ -44,6 +45,9 @@ public class Process {
 		this.processEndDate = processEndDate;
 		this.processEndTime = processEndTime;
 	}
+	
+	// 작업 지시번호를 자동으로 입력되게 하는 경우
+	
 
 	public int getProcessNo() {
 		return processNo;

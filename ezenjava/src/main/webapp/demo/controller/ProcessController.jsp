@@ -4,7 +4,7 @@
 	pageEncoding="UTF-8"%>
 <%
 request.setCharacterEncoding("utf-8");
-int processOrder = Integer.parseInt(request.getParameter("processOrder"));
+int processOrder = Integer.parseInt(request.getParameter("processOrder")) + 1;
 String processPreparation1 = request.getParameter("processPreparation1");
 String processPreparation2 = request.getParameter("processPreparation2");
 String processPreparation3 = request.getParameter("processPreparation3");
