@@ -54,7 +54,7 @@ function inputCheck() {
 	}
 
 	if (!processD1 && !processD2) {
-		document.getElementById("r4").innerHTML = "모든 항목을 선택하셔야 합니다.";
+		document.getElementById("r4").innerHTML = "모든 항목을 선택하셔야 합니다."; 
 		document.getElementById("r4").style.color = "red";
 		return false;
 	} else {
