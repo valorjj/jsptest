@@ -42,7 +42,7 @@
 					<span>재료준비</span> 
 					<input onchange="inputCheck();" type="radio" name="processPreparation1" id="processA1" value="완료"/> 완료 
 					<input onchange="inputCheck();" type="radio" name="processPreparation1" id="processA2" value="작업중"/> 작업중
-					<span id="process1"></span>
+					<span id="r1"></span>
 				</div>
 				<div class="process-item">
 					<span>인쇄공정</span>

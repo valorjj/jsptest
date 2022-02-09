@@ -27,6 +27,54 @@ function inputCheck() {
 	var processF2 = document.getElementById("processF2").checked;
 
 
+	if (!processA1 && !processA2) {
+		document.getElementById("r1").innerHTML = "모든 항목을 선택하셔야 합니다.";
+		document.getElementById("r1").style.color = "red";
+		return false;
+	} else {
+		document.getElementById("r1").innerHTML = "";
+	}
+
+	if (!processB1 && !processB2) {
+		document.getElementById("r2").innerHTML = "모든 항목을 선택하셔야 합니다.";
+		document.getElementById("r2").style.color = "red";
+		return false;
+	} else {
+		document.getElementById("r2").innerHTML = "";
+	}
+
+	if (!processC1 && !processC2) {
+		document.getElementById("r3").innerHTML = "모든 항목을 선택하셔야 합니다.";
+		document.getElementById("r3").style.color = "red";
+		return false;
+	} else {
+		document.getElementById("r3").innerHTML = "";
+	}
+
+	if (!processD1 && !processD2) {
+		document.getElementById("r4").innerHTML = "모든 항목을 선택하셔야 합니다.";
+		document.getElementById("r4").style.color = "red";
+		return false;
+	} else {
+		document.getElementById("r4").innerHTML = "";
+	}
+
+	if (!processE1 && !processE2) {
+		document.getElementById("r5").innerHTML = "모든 항목을 선택하셔야 합니다.";
+		document.getElementById("r5").style.color = "red";
+		return false;
+	} else {
+		document.getElementById("r5").innerHTML = "";
+	}
+
+	if (!processF1 && !processF2) {
+		document.getElementById("r6").innerHTML = "모든 항목을 선택하셔야 합니다.";
+		document.getElementById("r6").style.color = "red";
+		return false;
+	} else {
+		document.getElementById("r6").innerHTML = "";
+	}
+
 	if (!regdate.test(date) || date == "") {
 		document.getElementById("endDateResult").innerHTML = "2022-01-01 형식으로 입력해주세요";
 		document.getElementById("endDateResult").style.color = "red";
@@ -45,47 +93,6 @@ function inputCheck() {
 		document.getElementById("endTimeResult").innerHTML = "올바른 형식입니다. "
 		document.getElementById("endTimeResult").style.color = "green";
 
-	}
-
-	if (!processA1 && !processA2) {
-		document.getElementById("process1").innerHTML = "모든 항목을 선택하셔야 합니다.";
-		document.getElementById("process1").style.color = "red";
-		return false;
-	} else {
-		document.getElementById("process1").style.color = "green";
-	}
-
-	if (!processB1 && !processB2) {
-		document.getElementById("r2").innerHTML = "모든 항목을 선택하셔야 합니다.";
-		document.getElementById("r2").style.color = "red";
-		return false;
-	} else {
-		document.getElementById("r2").innerHTML = "good";
-		document.getElementById("r2").style.color = "green";
-	}
-
-	if (!processC1 && !processC2) {
-		document.getElementById("r3").innerHTML = "모든 항목을 선택하셔야 합니다.";
-		document.getElementById("r3").style.color = "red";
-		return false;
-	}
-
-	if (!processD1 && !processD2) {
-		document.getElementById("r4").innerHTML = "모든 항목을 선택하셔야 합니다.";
-		document.getElementById("r4").style.color = "red";
-		return false;
-	}
-
-	if (!processE1 && !processE2) {
-		document.getElementById("r5").innerHTML = "모든 항목을 선택하셔야 합니다.";
-		document.getElementById("r5").style.color = "red";
-		return false;
-	}
-
-	if (!processF1 && !processF2) {
-		document.getElementById("r6").innerHTML = "모든 항목을 선택하셔야 합니다.";
-		document.getElementById("r6").style.color = "red";
-		return false;
 	}
 
 
