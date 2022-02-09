@@ -30,7 +30,7 @@
 				orderCount = ProcessDao.getProcessDao().orderCount();
 			}
 		%>
-		<form action="controller/ProcessController.jsp" method="get" onsubmit="return inputCheck()">
+		<form id="processForm" action="controller/ProcessController.jsp" method="get" onsubmit="return inputCheck()">
 			<div class="process-wrapper">
 				<!-- 작업 지시 번호는 자동으로 입력되도록 한다. -->
 				<div class="test process-item">

@@ -8,10 +8,25 @@ function inputCheck() {
 	var regdate = /^([0-9]{4})-([0-9]{2})-([0-9]{2})$/;
 	var regtime = /^([0-9]{2}):([0-9]{2})$/;
 
-	var processA1 = document.getElementById("processA1").checked;
-	var processA2 = document.getElementById("processA2").checked;
+	var processA1 = document.getElementById("processForm").processA1.checked;
+	var processA1 = document.getElementById("processForm").processA2.checked;
 
-	var processB1 = document.getElementById("processB1").checked;
+	var processB1 = document.getElementById("processForm").processB1.checked;
+	var processB2 = document.getElementById("processForm").processB2.checked;
+
+	var processC1 = document.getElementById("processForm").processC1.checked;
+	var processC2 = document.getElementById("processForm").processC2.checked;
+
+	var processD1 = document.getElementById("processForm").processD1.checked;
+	var processD2 = document.getElementById("processForm").processD2.checked;
+
+	var processE1 = document.getElementById("processForm").processE1.checked;
+	var processE2 = document.getElementById("processForm").processE2.checked;
+
+	var processF1 = document.getElementById("processForm").processF1.checked;
+	var processF2 = document.getElementById("processForm").processF2.checked;
+
+/*	var processB1 = document.getElementById("processB1").checked;
 	var processB2 = document.getElementById("processB2").checked;
 
 	var processC1 = document.getElementById("processC1").checked;
@@ -24,7 +39,7 @@ function inputCheck() {
 	var processE2 = document.getElementById("processE2").checked;
 
 	var processF1 = document.getElementById("processF1").checked;
-	var processF2 = document.getElementById("processF2").checked;
+	var processF2 = document.getElementById("processF2").checked;*/
 
 
 	if (!processA1 && !processA2) {
@@ -82,7 +97,6 @@ function inputCheck() {
 	} else {
 		document.getElementById("endDateResult").innerHTML = "올바른 형식입니다. "
 		document.getElementById("endDateResult").style.color = "green";
-
 	}
 
 	if (!regtime.test(time) || time == "") {
@@ -92,7 +106,6 @@ function inputCheck() {
 	} else {
 		document.getElementById("endTimeResult").innerHTML = "올바른 형식입니다. "
 		document.getElementById("endTimeResult").style.color = "green";
-
 	}
 
 
