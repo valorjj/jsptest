@@ -41,45 +41,52 @@
 				</div>
 				<div>
 					<span>재료준비</span> 
-					<input type="radio" name="processPreparation1" class="" value="완료"/> 완료 
-					<input type="radio" name="processPreparation1" class="" value="작업중"/> 작업중
+					<input onchange="inputCheck();" type="radio" name="processPreparation1" id="processA1" value="완료"/> 완료 
+					<input onchange="inputCheck();" type="radio" name="processPreparation1" id="processA2" value="작업중"/> 작업중
+					<span id="r1"></span>
 				</div>
 				<div>
 					<span>인쇄공정</span>
-					<input type="radio" name="processPreparation2" class="" value="완료"/> 완료 
-					<input type="radio" name="processPreparation2" class="" value="작업중"/> 작업중
+					<input onchange="inputCheck();" type="radio" name="processPreparation2" id="processB1" value="완료"/> 완료 
+					<input onchange="inputCheck();" type="radio" name="processPreparation2" id="processB2" value="작업중"/> 작업중
+					<span id="r2"></span>
 				</div>
 				<div>
 					<span>코팅공정</span>
-					<input type="radio" name="processPreparation3" class="" value="완료"/> 완료 
-					<input type="radio" name="processPreparation3" class="" value="작업중"/> 작업중
+					<input onchange="inputCheck();" type="radio" name="processPreparation3" id="processC1" value="완료"/> 완료 
+					<input onchange="inputCheck();" type="radio" name="processPreparation3" id="processC2" value="작업중"/> 작업중
+					<span id="r3"></span>
 				</div>
 				<div>
 					<span>합지공정</span>
-					<input type="radio" name="processPreparation4" class="" value="완료"/> 완료 
-					<input type="radio" name="processPreparation4" class="" value="작업중"/> 작업중
+					<input onchange="inputCheck();" type="radio" name="processPreparation4" id="processD1" value="완료"/> 완료 
+					<input onchange="inputCheck();" type="radio" name="processPreparation4" id="processD2" value="작업중"/> 작업중
+					<span id="r4"></span>
 				</div>
 				<div>
 					<span>접합공정</span>
-					<input type="radio" name="processPreparation5" class="" value="완료"/> 완료 
-					<input type="radio" name="processPreparation5" class="" value="작업중"/> 작업중
+					<input onchange="inputCheck();" type="radio" name="processPreparation5" id="processE1" value="완료"/> 완료 
+					<input onchange="inputCheck();" type="radio" name="processPreparation5" id="processE2" value="작업중"/> 작업중
+					<span id="r5"></span>
 				</div>
 				<div>
 					<span>포장공정</span>
-					<input type="radio" name="processPreparation6" class="" value="완료"/> 완료 
-					<input type="radio" name="processPreparation6" class="" value="작업중"/> 작업중
+					<input onchange="inputCheck();" type="radio" name="processPreparation6" id="processF1" value="완료"/> 완료 
+					<input onchange="inputCheck();" type="radio" name="processPreparation6" id="processF2" value="작업중"/> 작업중
+					<span id="r6"></span>
 				</div>
 				
 				<div>
-					<span>최종작업일자</span>
+					<span>최종작업일자(입력예시 : 2021-01-01)</span>
 					<input onchange="inputCheck();" type="text" id="processEndDate" name="processEndDate"/>
 					<span id="endDateResult"></span>
 				</div>
 				
 				<div>
-					<span>최종작업시간</span>
+					<span>최종작업시간(입력예시 : 15:00)</span>
 					<input onchange="inputCheck();" type="text" id="processEndTime" name="processEndTime"/>
 					<span id="endTimeResult"></span>
+					
 				</div>
 			
 				<div>
