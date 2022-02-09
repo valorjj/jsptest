@@ -48,17 +48,20 @@ function inputCheck() {
 	}
 
 	if (!processA1 && !processA2) {
-		document.getElementById("r1").innerHTML = "모든 항목을 선택하셔야 합니다.";
-		document.getElementById("r1").style.color = "red";
+		document.getElementById("process1").innerHTML = "모든 항목을 선택하셔야 합니다.";
+		document.getElementById("process1").style.color = "red";
 		return false;
 	} else {
-		document.getElementById("r1").style.color = "green";
+		document.getElementById("process1").style.color = "green";
 	}
 
 	if (!processB1 && !processB2) {
 		document.getElementById("r2").innerHTML = "모든 항목을 선택하셔야 합니다.";
 		document.getElementById("r2").style.color = "red";
 		return false;
+	} else {
+		document.getElementById("r2").innerHTML = "good";
+		document.getElementById("r2").style.color = "green";
 	}
 
 	if (!processC1 && !processC2) {
