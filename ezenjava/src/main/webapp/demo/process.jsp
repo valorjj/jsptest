@@ -30,7 +30,7 @@
 				orderCount = ProcessDao.getProcessDao().orderCount();
 			}
 		%>
-		<form action="controller/ProcessController.jsp" method="get">
+		<form action="controller/ProcessController.jsp" method="get" onsubmit="return inputCheck()">
 			<div class="process-wrapper">
 
 				<!-- 작업 지시 번호는 자동으로 입력되도록 한다. -->
@@ -72,23 +72,24 @@
 				
 				<div>
 					<span>최종작업일자</span>
-					<input type="text" name="processEndDate"/>
-					<span>예)20220203</span>
+					<input onchange="inputCheck();" type="text" id="processEndDate" name="processEndDate"/>
+					<span id="endDateResult"></span>
 				</div>
 				
 				<div>
 					<span>최종작업시간</span>
-					<input type="text" name="processEndTime"/>
-					<span>예)1500</span>
+					<input onchange="inputCheck();" type="text" id="processEndTime" name="processEndTime"/>
+					<span id="endTimeResult"></span>
 				</div>
 			
 				<div>
 					<input type="submit" value="공정등록">
 				</div>
-				
 			</div>
 		</form>
 	</div>
+	
+	<script src="js/process.js"></script>
 
 	<%@ include file="footer.jsp"%>
 
