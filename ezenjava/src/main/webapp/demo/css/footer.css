@@ -1,1 +1,13 @@
 @charset "UTF-8";
+
+body {
+	margin: 0;
+}
+
+footer {
+	display: flex;
+	background-color: lightgrey;
+	height: 75px;
+	align-items: center;
+	justify-content: center;
+}

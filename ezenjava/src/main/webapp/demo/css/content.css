@@ -2,10 +2,15 @@
 
 body {
 	margin: 0;
+	
 }
 
 .content-title{
 	text-align: center;
+}
+
+.content-list-wrapper{
+	margin-bottom: 100px;
 }
 
 .content-list-wrapper ul {

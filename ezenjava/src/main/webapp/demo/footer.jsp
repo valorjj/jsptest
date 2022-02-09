@@ -5,8 +5,14 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<link rel="stylesheet" href="css/footer.css" />
 </head>
 <body>
+
+<footer>
+	<h3>HRDKOREA Copyright@2019 All rights reserved. Human Resources Development Service of Korea</h3>
+</footer>
+
 
 </body>
 </html>
