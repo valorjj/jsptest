@@ -13,8 +13,8 @@
 	<nav>
 		<ul class="nav-container">
 			<li class="nav-item"><a href="#">제품조회</a></li>
-			<li class="nav-item"><a href="">작업지시서조회</a></li>
-			<li class="nav-item"><a href="#">작업공정등록</a></li>
+			<li class="nav-item"><a href="#">작업지시서조회</a></li>
+			<li class="nav-item"><a href="process.jsp">작업공정등록</a></li>
 			<li class="nav-item"><a href="#">작업공정조회</a></li>
 			<li class="nav-item"><a href="index.jsp">홈으로</a></li>
 		</ul>
