@@ -25,7 +25,6 @@
 		<div class="process-title" style="text-align: center;">
 			<h3>작업 공정 조회</h3>
 		</div>
-
 		<table class="process-table">
 			<thead class="table-head">
 				<tr id="table-top">

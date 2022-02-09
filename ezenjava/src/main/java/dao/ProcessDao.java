@@ -53,6 +53,7 @@ public class ProcessDao extends DB{
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+		// 아무것도 등록되지 않은 상태라면 -1 을 리턴해서 제어한다.
 		return -1;
 	}
 	

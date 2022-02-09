@@ -29,8 +29,6 @@
 				// 이미 있으면 기존 값을 가져온다. 
 				orderCount = ProcessDao.getProcessDao().orderCount();
 			}
-		
-			
 		%>
 		<form action="controller/ProcessController.jsp" method="get">
 			<div class="process-wrapper">
@@ -39,6 +37,7 @@
 				<div class="test">
 					<span>작업지시번호</span> 
 					<span style="color:green;"><%=orderCount %></span>
+					<input type="hidden" value="<%=orderCount%>" name="processOrder"/>
 				</div>
 				<div>
 					<span>재료준비</span> 
@@ -82,12 +81,11 @@
 					<input type="text" name="processEndTime"/>
 					<span>예)1500</span>
 				</div>
-				
+			
 				<div>
 					<input type="submit" value="공정등록">
 				</div>
-			
-			
+				
 			</div>
 		</form>
 	</div>
