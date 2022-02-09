@@ -9,9 +9,11 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<link rel="stylesheet" href="css/list.css" />
 </head>
 <body>
 	<%@ include file="header.jsp"%>
+	<%@ include file="nav.jsp"%>
 
 	<%
 	// 등록된 리스트 가져오기 
@@ -24,26 +26,24 @@
 			<h3>작업 공정 조회</h3>
 		</div>
 
-		<table>
-			<thead>
-				<tr>
-					<td>작업지시번호</td>
-					<td>준비완료</td>
-					<td>인쇄완료</td>
-					<td>코팅완료</td>
-					<td>합지완료</td>
-					<td>접합완료</td>
-					<td>포장완료</td>
-					<td>최종공정일자</td>
-					<td>최종공정시간</td>
-
+		<table class="process-table">
+			<thead class="table-head">
+				<tr id="table-top">
+					<th>작업지시번호</th>
+					<th>준비완료</th>
+					<th>인쇄완료</th>
+					<th>코팅완료</th>
+					<th>합지완료</th>
+					<th>접합완료</th>
+					<th>포장완료</th>
+					<th>최종공정일자</th>
+					<th>최종공정시간</th>
 				</tr>
 			</thead>
-			<tbody>
+			<tbody class="table-body">
 				<%
 				for (Process process : test) {
 				%>
-				
 				<tr>
 					<td><%=process.getProcessOrder() %></td>
 					<td><%=process.getProcessPreparation1() %></td>
