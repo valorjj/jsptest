@@ -36,8 +36,8 @@
 				<!-- 작업 지시 번호는 자동으로 입력되도록 한다. -->
 				<div class="test">
 					<span>작업지시번호</span> 
-					<span style="color:green;"><%=orderCount %></span>
-					<input type="hidden" value="<%=orderCount%>" name="processOrder"/>
+					<span style="color:green;"><%=orderCount+1%></span>
+					<input type="hidden" value="<%=orderCount+1%>" name="processOrder"/>
 				</div>
 				<div>
 					<span>재료준비</span> 

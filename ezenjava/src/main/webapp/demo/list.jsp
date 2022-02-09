@@ -42,17 +42,62 @@
 			<tbody class="table-body">
 				<%
 				for (Process process : test) {
+
 				%>
 				<tr>
 					<td><%=process.getProcessOrder() %></td>
+					
+					<%
+					if(process.getProcessPreparation1().equals("작업중")) {
+					%>
+					<td> - </td>
+					<% } else { %>
 					<td><%=process.getProcessPreparation1() %></td>
+					<% } %>
+					
+					<%
+					if(process.getProcessPreparation2().equals("작업중")) {
+					%>
+					<td> - </td>
+					<% } else { %>
 					<td><%=process.getProcessPreparation2() %></td>
+					<% } %>
+					
+					<%
+					if(process.getProcessPreparation1().equals("작업중")) {
+					%>
+					<td> - </td>
+					<% } else { %>
+					<td><%=process.getProcessPreparation1() %></td>
+					<% } %>
+					
+					<%
+					if(process.getProcessPreparation3().equals("작업중")) {
+					%>
+					<td> - </td>
+					<% } else { %>
 					<td><%=process.getProcessPreparation3() %></td>
-					<td><%=process.getProcessPreparation4() %></td>
+					<% } %>
+					
+					<%
+					if(process.getProcessPreparation4().equals("작업중")) {
+					%>
+					<td> - </td>
+					<% } else { %>
 					<td><%=process.getProcessPreparation5() %></td>
+					<% } %>
+					
+					<%
+					if(process.getProcessPreparation6().equals("작업중")) {
+					%>
+					<td> - </td>
+					<% } else { %>
 					<td><%=process.getProcessPreparation6() %></td>
+					<% } %>
+
 					<td><%=process.getProcessEndDate() %></td>
 					<td><%=process.getProcessEndTime() %></td>
+					
 				</tr>
 				<%
 				}
